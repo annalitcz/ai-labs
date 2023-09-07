@@ -1,14 +1,14 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faRobot, faCode } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faRobot, faCode, faUserSecret } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
 
   const navMenu = [
     { to: "/", name: "Home", icon: faHome },
     { to: "/ai", name: "Ai List", icon: faRobot },
-    { to: "/about", name: "About", icon: faRobot },
+    { to: "/about", name: "About", icon: faUserSecret },
   ];
 
   return (
@@ -30,10 +30,10 @@ const Navbar = () => {
         ))}
       </div>
       <Link
-        to={"https://github.com/annalitcz/Ai-Verse"}
+        to={"https://github.com/annalitcz/ai-labs"}
         target="_blank"
         rel="noopener noreferrer"
-        className="bg-slate-600 text-white rounded-lg p-2 text-sm"
+        className="bg-green-600 text-white rounded-lg p-2 text-sm"
       >
         Code <FontAwesomeIcon icon={faCode} />
       </Link>

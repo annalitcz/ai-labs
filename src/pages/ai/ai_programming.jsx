@@ -28,7 +28,7 @@ const AiProgramming = () => {
   ];
 
   useEffect(() => {
-    document.Title = "AiLabs - AI Programming";
+    document.title = "AiLabs - AI Programming";
   }, []);
 
   return (
